@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <!--Stream video via webcam-->
+    <div class="container">
+        <div class="video-wrapper">
+            <video id="video" playsinline autoplay width="800" height="600" style="border:2px solid black;"></video>
+            <div class="controller">
+                <button id="snap">Capture</button>
+                <button id="stop"><span id="stoptoggle">Stop</span></button>
+                <button id="hidden"><span id="hiddentoggle">Hidden</span></button>
+                <button id="download">Download Image</button>
+        
+                
+            </div>
+            <canvas id="canvas" width="640" height="480"></canvas>
+        </div>
+        <div class="feature">
+            <div class="input input__blur">
+              <label for="input--blur">Blur</label>
+                <input type="range" min="0" max="100" value="0" id="input--blur">
+            </div>
+            <div class="input input__constrast">
+            <label for="input--constrast">Constrast</label>
+                <input type="range" min="0" max="200" value="100" id="input--constrast">
+            </div>
+            <div class="input input__hue">
+                <label for="input--hue">Hue-Rotate</label>
+                <input type="range" min="0" max="360" value="0" id="input--hue">
+            </div>
+            <div class="input input__sepia">
+                <label for="input--sepia">Sepia</label>
+                <input type="range" min="0" max="100" value="0" id="input--sepia">
+            </div>
+            <div class="input input__brightness">
+                <label for="input--sepia">Brightness</label>
+                <input type="range" min="0" max="200" value="100" id="input--brightness">
+            </div>
+            <div class="input input__sepia">
+                <label for="input--sepia">Saturate</label>
+                <input type="range" min="0" max="200" value="100" id="input--saturate">
+            </div>
+         
+            <input type="button" value="Reset!" id="resetbtn" />
+         </div>
+
+        
+  </div>
+    
+
+  
+    <!--Webcam video snapshot-->
+   
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

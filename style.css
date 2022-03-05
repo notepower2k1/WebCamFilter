@@ -1,0 +1,18 @@
+.container{
+    display:flex;
+    justify-content:space-around;
+}
+
+.feature{
+    width:30%;
+    padding:10px
+}
+.feature label{
+    display:block;
+    font-weight: bold;
+    margin:10px 5px;
+    justify-content:center;
+}
+.feature input[type="range"]{
+    width:100%;
+}
